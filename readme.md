@@ -2,7 +2,9 @@
 
 **Linters** y **autoformateadores** son herramientas clave para garantizar la consistencia y calidad del código. A continuación, se presenta una comparación entre los linters (`pycodestyle`, `flake8`) y los autoformatters (`black`, `ruff`), además de sus características y uso.
 
-### 1. **Linter: `pycodestyle`**
+## **LINTERS**
+
+### **pycodestyle**
 
 #### Descripción:
 `pycodestyle` es una herramienta que revisa si tu código Python cumple con la guía de estilo PEP 8. Solo se enfoca en el estilo de escritura y no analiza otros aspectos como la complejidad o errores lógicos del código.
@@ -25,7 +27,7 @@ script.py:1:1: E265 block comment should start with '# '
 
 ---
 
-### 2. **Linter: `flake8`**
+### **flake8**
 
 #### Descripción:
 `flake8` es un linter más completo que combina la verificación de estilo de `pycodestyle` con la detección de errores (a través de PyFlakes) y control de complejidad ciclomática (a través de McCabe). Proporciona un análisis más amplio y flexible.
@@ -49,7 +51,9 @@ script.py:3:5: F821 undefined name 'undefined_variable'
 
 ---
 
-### 3. **Autoformatter: `black`**
+## **AUTOFORMATTERS**
+
+### **black**
 
 #### Descripción:
 `black` es un autoformateador que aplica estrictamente la guía de estilo PEP 8, con algunas decisiones arbitrarias para asegurar un formato consistente. Su enfoque es "opinionado", lo que significa que toma decisiones de formato sin requerir configuraciones extensas.
@@ -85,7 +89,7 @@ def foo():
 
 ---
 
-### 4. **Autoformatter y Linter: `ruff`**
+### **ruff**
 
 #### Descripción:
 `ruff` es una herramienta que combina las funcionalidades de linter y autoformateador. Es extremadamente rápido y puede reemplazar a varias herramientas como `flake8`, `pycodestyle`, `pyflakes`, y `isort`. `ruff` no solo analiza el estilo y los errores, sino que también puede corregir algunos problemas automáticamente.
@@ -117,10 +121,10 @@ script.py:3:5 F821 undefined name 'undefined_variable'
 
 ### Conclusiones
 
-1. **`pycodestyle`** es una herramienta básica y ligera para verificar el cumplimiento de las reglas de PEP 8, pero no analiza errores lógicos ni proporciona formateo automático.
-2. **`flake8`** es más completo que `pycodestyle`, ya que además del estilo, detecta errores y evalúa la complejidad del código. Es ideal para análisis más amplios, pero no tiene capacidades de autoformateo.
-3. **`black`** es un autoformateador estricto y no personalizable, que prioriza la consistencia sobre la flexibilidad. Es ideal para mantener un código limpio sin debates sobre el estilo.
-4. **`ruff`** combina lo mejor de los linters y autoformateadores, con capacidad de corrección automática y un rendimiento sobresaliente. Es una herramienta moderna que puede reemplazar a varias otras.
+1. **pycodestyle** es una herramienta básica y ligera para verificar el cumplimiento de las reglas de PEP 8, pero no analiza errores lógicos ni proporciona formateo automático.
+2. **flake8** es más completo que `pycodestyle`, ya que además del estilo, detecta errores y evalúa la complejidad del código. Es ideal para análisis más amplios, pero no tiene capacidades de autoformateo.
+3. **black** es un autoformateador estricto y no personalizable, que prioriza la consistencia sobre la flexibilidad. Es ideal para mantener un código limpio sin debates sobre el estilo.
+4. **ruff** combina lo mejor de los linters y autoformateadores, con capacidad de corrección automática y un rendimiento sobresaliente. Es una herramienta moderna que puede reemplazar a varias otras.
 
 ### Uso recomendado:
 - Si solo necesitas verificación de estilo, usa `pycodestyle`.
