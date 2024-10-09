@@ -1,4 +1,4 @@
-### Comparación de Linters y Autoformatters: `pycodestyle`, `flake8`, `black`, y `ruff`
+# Comparación de Linters y Autoformatters: `pycodestyle`, `flake8`, `black`, y `ruff`
 
 **Linters** y **autoformateadores** son herramientas clave para garantizar la consistencia y calidad del código. A continuación, se presenta una comparación entre los linters (`pycodestyle`, `flake8`) y los autoformatters (`black`, `ruff`), además de sus características y uso.
 
